@@ -19,23 +19,46 @@
     
 //     return 0;
 // }
+// #include <iostream>
+// #include<math.h>
+// using namespace std;
+// int main() {
+//     int n;
+//     int i=0; long long ans =0;
+//     cout<<"Enter a binary number : ";
+//     cin>>n;
+//     while(n !=0){
+//         int digit = n%10;
+//         if(digit==1){
+//             ans = ans +pow(2,i);
+//         }
+//         n =n/10;
+//         i++;
+//     }
+//         cout <<"Decimal number is "<< ans ;
+//     return 0;
+    
+// }
+
+
+
 #include <iostream>
 #include<math.h>
 using namespace std;
 int main() {
     int n;
-    int i=0; long long ans =0;
+    int i=0, count =0;
     cout<<"Enter a binary number : ";
     cin>>n;
     while(n !=0){
         int digit = n%10;
         if(digit==1){
-            ans = ans +pow(2,i);
+            count++;
         }
         n =n/10;
-        i++;
+        
     }
-        cout <<"Decimal number is "<< ans ;
+        cout <<"No of 1's are  "<< count ;
     return 0;
     
 }
